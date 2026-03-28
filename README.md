@@ -1,182 +1,152 @@
 # 📊 Customer Churn Analysis & Prediction System
 
+📊 Business-Focused Churn Analytics & Prediction System for Customer Retention  
+📌 End-to-End Project: SQL → Data Analysis → Power BI Dashboard → Machine Learning (Random Forest)  
+⭐ Highlight: Identified high-risk customers and key churn drivers impacting retention and revenue  
+
+---
+
 ## 🚀 Project Overview
 
-This project is a complete **end-to-end data analytics + machine learning solution** designed to analyze customer churn and predict future churners.
+This project is a complete **end-to-end data analytics and machine learning solution** designed to analyze and predict customer churn.
 
-It combines:
+📊 Dataset includes customer demographics, services, and usage behavior  
 
-* 🗄️ SQL (Data Cleaning & Transformation)
-* 📊 Power BI (Interactive Dashboard)
-* 🤖 Python (Machine Learning - Random Forest)
-
-The goal is to help businesses **identify churn patterns and take proactive actions to retain customers.**
-
----
-
-## 📸 Project Preview
-
-### 📊 Churn Analysis Dashboard (Summary)
-
-![Churn Summary](churn_analysis.png)
-
-### 🤖 Churn Prediction Dashboard
-
-![Churn Prediction](churn_analysis_1.png)
+👉 The goal is to:
+- Identify churn patterns  
+- Predict customers likely to leave  
+- Enable proactive retention strategies  
 
 ---
 
-## 🧠 Problem Statement
+## 🎯 Business Problem
 
-Customer churn is a major challenge for telecom and subscription-based businesses.
+Customer churn directly impacts revenue and growth.
 
-This project answers:
+Businesses struggle to:
+- Identify why customers leave  
+- Predict future churners  
+- Take preventive actions  
 
-* Why are customers leaving?
-* Which customers are likely to churn?
-* How can businesses reduce churn?
-
----
-
-## 🛠️ Tech Stack
-
-* **SQL** → Data cleaning, transformation, feature engineering
-* **Power BI** → Dashboard & visualization
-* **Python (Scikit-learn)** → Machine Learning model
-* **Jupyter Notebook** → Model development
+👉 Key Question:  
+**How can businesses reduce churn and improve customer retention?**
 
 ---
 
-## 📂 Project Structure
+## 🛠 Tools & Technologies
 
-```
-📁 Customer-Churn-Analysis-Prediction-System
-│
-├── 📁 datasets/
-│
-├── 📁 sql/
-│
-├── 📁 PowerBI and Python code and Inst/
-│
-├── 📄 churn_analysis.png
-├── 📄 churn_analysis_1.png
-│
-└── 📄 README.md
-```
+- SQL – Data Cleaning & Transformation  
+- Power BI – Dashboard & Visualization  
+- Python (Scikit-learn) – Machine Learning  
+- Jupyter Notebook – Model Development  
 
 ---
 
-## 🔍 Data Processing (SQL)
+## 🔄 Data Processing (SQL)
 
-* Performed data exploration using GROUP BY and aggregations
-* Handled null values using ISNULL
-* Transformed raw data into structured production tables
-* Created views:
-
-  * `vw_ChurnData`
-  * `vw_JoinData`
+- Data exploration using GROUP BY and aggregations  
+- Handled missing values  
+- Created structured views:
+  - `vw_ChurnData`
+  - `vw_JoinData`  
 
 ---
 
 ## 🔄 Data Transformation (Power Query)
 
-* Created calculated columns:
-
-  * Churn Status (0/1)
-  * Monthly Charge Range
-
-* Created mapping tables:
-
-  * Age Group
-  * Tenure Group
-
-* Unpivoted service columns for better analysis
+- Created churn labels (0/1)  
+- Built segmentation features:
+  - Age Group  
+  - Tenure Group  
+- Transformed data for better analysis  
 
 ---
 
 ## 📊 Power BI Dashboard
 
-### Key Metrics:
+### ✔ Key Metrics
+- Total Customers  
+- New Joiners  
+- Total Churn  
+- Churn Rate  
 
-* Total Customers
-* New Joiners
-* Total Churn
-* Churn Rate
+---
 
-### Features:
-
-* Interactive filters
-* Customer segmentation
-* Revenue insights
-* Churn trend analysis
+### ✔ Features
+- Interactive filters  
+- Customer segmentation  
+- Revenue insights  
+- Churn trend analysis  
 
 ---
 
 ## 🤖 Machine Learning Model
 
-Model Used: **Random Forest Classifier**
+Model: **Random Forest Classifier**
 
-### Steps:
+### ✔ Steps
+- Data preprocessing  
+- Encoding  
+- Train-test split  
+- Model training  
+- Evaluation  
 
-* Data preprocessing
-* Label encoding
-* Train-test split
-* Model training
-* Model evaluation using:
+### ✔ Evaluation Metrics
+- Confusion Matrix  
+- Classification Report  
 
-  * Confusion Matrix
-  * Classification Report
-
-### Output:
-
-* Predicts customers likely to churn
-* Generates a list of high-risk customers
+👉 Predicts customers likely to churn and identifies high-risk segments  
 
 ---
 
-## 📈 Key Insights
+## 📊 Key Insights
 
-* Customers with shorter tenure are more likely to churn
-* Higher monthly charges increase churn probability
-* Contract type significantly impacts retention
-* Certain services help reduce churn
-
----
-
-## 🎯 Business Impact
-
-* Early identification of high-risk customers
-* Improved retention strategies
-* Increased revenue by reducing churn
-* Data-driven decision making
+- Customers with shorter tenure are more likely to churn  
+- Higher monthly charges increase churn probability  
+- Contract type strongly impacts retention  
+- Certain services reduce churn risk  
 
 ---
 
-## ⚡ How to Run
+## 💡 Business Recommendations
 
-1. Execute SQL queries to prepare the dataset
-2. Load data into Power BI
-3. Apply Power Query transformations
-4. Run the Python ML model in Jupyter Notebook
-5. Analyze insights using dashboard
+- Target high-risk customers with retention offers  
+- Provide incentives for long-term contracts  
+- Optimize pricing for high-charge customers  
+- Promote services that improve retention  
 
 ---
 
-## 🏆 Future Improvements
+## 📷 Dashboard Preview
 
-* Deploy model using Flask or Streamlit
-* Automate data pipeline
-* Use advanced models like XGBoost
-* Enable real-time churn prediction
+![Churn Summary](churn_analysis.png)  
+![Churn Prediction](churn_analysis_1.png)  
+
+---
+
+## 🎯 Impact
+
+- Identified key churn drivers affecting customer retention  
+- Built predictive model to detect high-risk customers  
+- Enabled proactive retention strategies  
+- Supported data-driven decision making  
+
+---
+
+## ⭐ Future Enhancements
+
+- Deploy model using Flask / Streamlit  
+- Automate data pipeline  
+- Use advanced models (XGBoost, LightGBM)  
+- Real-time churn prediction  
 
 ---
 
 ## 👨‍💻 Author
 
-**Chandan Sah**
+**Chandan Kumar Sah**  
+Data Analyst | SQL • Power BI • Python • Machine Learning  
 
 ---
 
-## ⭐ If you like this project
-
-Give it a ⭐ on GitHub!
+⭐ If you found this project useful, consider giving it a **star**
